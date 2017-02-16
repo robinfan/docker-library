@@ -1,4 +1,4 @@
-FROM registry.aliyuncs.com/docker-baseos
+FROM registry.cn-hangzhou.aliyuncs.com/robinfan/docker-baseos
 MAINTAINER RobinFan <robinfan@live.cn>
 
 RUN curl  -o nginxrepo.rpm  http://nginx.org/packages/centos/7/noarch/RPMS/nginx-release-centos-7-0.el7.ngx.noarch.rpm && \

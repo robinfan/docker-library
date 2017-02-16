@@ -1,4 +1,4 @@
-FROM registry.aliyuncs.com/docker-baseos
+FROM registry.cn-hangzhou.aliyuncs.com/robinfan/docker-baseos
 MAINTAINER RobinFan <robinfan@live.cn>
 
 # Install required packages and remove the apt packages cache when done.
