@@ -1,0 +1,10 @@
+hitecloud:
+  image: registry.aliyuncs.com/hitecloud/hitephp7
+  container_name: hitephp7
+  ports:
+    - "80:80"
+    - "443:443"
+  volumes:
+    - /hhedu/hiteserver/hitecloud/config/nginx/conf:/etc/nginx
+    - /hhedu/www:/opt/www
+    - /hhedu/logs:/opt/logs

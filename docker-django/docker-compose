@@ -1,0 +1,9 @@
+hitecloud:
+  image: registry.aliyuncs.com/hitecloud/hitedjango
+  container_name: hitedjango
+  ports:
+    - "8066:80"
+    - "8443:443"
+  volumes:
+    - /hhedu/www/examserver:/opt/app
+    - /hhedu/logs:/opt/logs
