@@ -8,8 +8,8 @@ RUN curl  -o nginxrepo.rpm  http://nginx.org/packages/centos/7/noarch/RPMS/nginx
 
 RUN yum install -y gcc nginx MySQL-python python-devel uwsgi uwsgi-plugin-python && \
     easy_install -i http://pypi.douban.com/simple pip  && \
-		pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com django && \
-    pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com django-bootstrap3
+		pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flask && \
+    pip install -i http://pypi.douban.com/simple --trusted-host pypi.douban.com flask-restful
 
 # tweak nginx config
 RUN sed -i -e"s/worker_processes  1/worker_processes 5/" /etc/nginx/nginx.conf && \
