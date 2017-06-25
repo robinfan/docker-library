@@ -18,7 +18,7 @@ echo "daemon off;" >> /etc/nginx/nginx.conf
 ADD ./container-files /
 
 
-RUN  /opt/elasticsearch/bin/plugin install x-pack
+RUN  /opt/elasticsearch/bin/plugin install  file:///opt/x-pack-5.4.2.zip
 
 #add an single user
 RUN useradd  elasticuser && \
